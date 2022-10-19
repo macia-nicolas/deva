@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactáte con DEVA</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <img src="deva.svg" alt="Logo DEVA" id="header_deva-logo">
+        <div id="header_right-icons">
+            <img src="search.svg" alt="Icono Búsqueda">
+            <nav>
+                    <img src="hamburger-menu.svg" alt="Ícono menu" id="header_menu-icon">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>
+            Contactáte
+        </h1>
+        <h2>¡Dejános tu consulta, y nos pondremos en contacto con vos!</h2>
+        <form action="contacto.php" method="post">
+            <input type="text" class="main_formulario-inputs" name="Nombre" placeholder="Nombre" required>
+            <input type="email" class="main_formulario-inputs" name="Email" placeholder="Email" required>
+            <select name="Asunto" id="main_formulario-selector" required>
+                <option value="" disabled selected hidden>Asunto</option>
+                <option value="Esports">Esports</option>
+                <option value="Información">Información</option>
+                <option value="Ayuda de Deva">Ayuda de parte de Deva</option>
+                <option value="Otros">Otros</option>
+            </select>
+            <textarea name="Mensaje" id="" cols="30" rows="5" placeholder="Dejános tu mensaje acá..."></textarea>
+            <input type="submit">
+        </form>
+    </main>
+
+
+</body>
+
+</html>
